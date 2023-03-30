@@ -27,11 +27,16 @@ public class Cafe extends Building{
         if (this.nCups != 0){
             this.nCups -= 1;
         }
-        myCafe.restock(100, 100, 100, 100); 
+        else {
+            restock(100, 100, 100, 100);
+        } 
     }
 
     private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups){
-        
+        this.nCoffeeOunces = 100;
+        this.nSugarPackets = 100;
+        this.nCreams = 100;
+        this.nCups = 100; 
     }
     
     //public static void main(String[] args) {
